@@ -34,11 +34,11 @@ $books = $bookObj->tampilBuku();
             <tbody>
             <?php foreach ($books as $row): ?>
                     <tr>
-                        <td><?= htmlspecialchars($row['id']) ?></td>
-                        <td><?= htmlspecialchars($row['title']) ?></td>
-                        <td><?= htmlspecialchars($row['author']) ?></td>
-                        <td><?= htmlspecialchars($row['published_year']) ?></td>
-                        <td><?= htmlspecialchars($row['genre']) ?></td>
+                        <td><?= ($row['id']) ?></td>
+                        <td><?= ($row['title']) ?></td>
+                        <td><?= ($row['author']) ?></td>
+                        <td><?= ($row['published_year']) ?></td>
+                        <td><?= ($row['genre']) ?></td>
                         <td>
                             <a href="update.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">Edit</a>
                             <a href="hapus.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?');">Delete</a>
