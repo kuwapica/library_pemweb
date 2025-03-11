@@ -18,10 +18,10 @@ $books = $bookObj->tampilBuku();
 </head>
 <body>
 <div class="container mt-5">
-    <h2 class="mb-4">Manajemen Buku Perpustakaan</h2>
-        <a href="tambah.php" class="btn btn-primary mb-3">Tambah Buku</a>
+    <h2 class="mb-4 text-center">Manajemen Buku Perpustakaan</h2>
+        <a href="tambah.php" class="btn btn-success mb-3">Tambah Buku</a>
         <table id="booksTable" class="table table-striped">
-            <thead>
+            <thead class="table-success">
                 <tr>
                     <th>ID</th>
                     <th>Title</th>

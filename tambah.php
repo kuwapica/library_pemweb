@@ -7,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bookObj->tambahBuku($_POST['title'], $_POST['author'], $_POST['published_year'], $_POST['genre']);
     header("Location: index.php");
 }
-
 ?>
 
 <!DOCTYPE html>
